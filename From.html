@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/img1.svg">
+    <title>From - Admin panel </title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <!-- Or for RTL support -->
+    <!-- Scripts -->
+    <script src="js/frontawesome.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="sp-nav-fixed">
+    <nav class="sp-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html"> Admin panel</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
+                    aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
+                        class="fas fa-search"></i></button>
+            </div>
+        </form>
+        <!-- Navbar-->
+
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
+                    <li><a class="dropdown-item" href="register.html"> Register</a></li>
+                    <li><a class="dropdown-item" href="login.html"> Login</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sp-sidenav accordion sp-sidenav-dark" id="sidenavAccordion">
+
+                <div class="sp-sidenav-menu">
+                    <div class="nav">
+                        <div class="sp-sidenav-menu-heading">Core</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+
+                        <div class="sp-sidenav-menu-heading">Interface</div>
+                        <a class="nav-link active collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sp-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            From
+                            <div class="sp-sidenav-collapse-arrow  "><i class="fas fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse show" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav ">
+                                <a class="nav-link active  " href="From.html">General from</a>
+                                <a class="nav-link" href="Advance-from.html">Advance from</a>
+                            </nav>
+                        </div>
+                       
+
+                        <!-- page section -->
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sp-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Pages
+                            <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                                <a class="nav-link" href="login.html">Login</a>
+                                <a class="nav-link" href="register.html">Register</a>
+                                <a class="nav-link" href="logout.html">Logout</a>
+                                <a class="nav-link" href="forgotpass.html">Forgot Password</a>
+                            </nav>
+                        </div>
+
+                        <!-- page section end-->
+
+
+                        <!-- Item section start -->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseItem"
+                            aria-expanded="false" aria-controls="collapseItem">
+                            <div class="sp-nav-link-icon"><i class="fas  fa-sitemap"></i></div>
+                            Item
+                            <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse " id="collapseItem" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav accordion" id="sidenavAccordionItem">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#pagesCollapseItem" aria-expanded="false"
+                                    aria-controls="pagesCollapseItem">
+                                    Components
+                                    <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse " id="pagesCollapseItem" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionItem">
+                                    <nav class="sp-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="Item1.html">Item1</a>
+                                        <a class="nav-link" href="Item2.html">Item2</a>
+                                        <a class="nav-link" href="Employee.html">Employee</a>
+                                    </nav>
+                                </div>
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#itemCollapseError" aria-expanded="false"
+                                    aria-controls="itemCollapseError">
+                                    Error
+                                    <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="itemCollapseError" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionItem">
+                                    <nav class="sp-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="401error.html">401 Page</a>
+                                        <a class="nav-link" href="404error.html">404 Page</a>
+
+                                    </nav>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Item section end -->
+
+
+                        <div class="sp-sidenav-menu-heading">Addons</div>
+                        <a class="nav-link" href="charts.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Charts
+                        </a>
+
+
+                        <a class="nav-link" href="tables.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Tables
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="sp-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    Admin panel
+                </div>
+            </nav>
+        </div>
+
+
+        <div id="layoutSidenav_content">
+
+            <main>
+                <div class="container-fluid px-5 pt-4">
+                    <h1 class="mt-4  header p-2">Genaral From</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item active"></li>
+                    </ol>
+                    <!-- from validation start -->
+
+                    <div class=" mb-4 m-3  box shadow-sm ">
+
+
+                        <div class="header box  pt-3 p-2">
+
+                            <h3>Form Validation</h3>
+                        </div>
+
+                        <form id="formAccountSettings" method="POST" onsubmit="return false"
+                            class="fv-plugins-bootstrap5 fv-plugins-framework m-4" novalidate="novalidate"
+                            data-select2-id="formAccountSettings">
+                            <div class="row" data-select2-id="12">
+                                <div class="mb-3 col-md-6 fv-plugins-icon-container">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input class="form-control bg-light" type="text" id="firstName" name="firstName"
+                                        placeholder="salma" autofocus="">
+                                    <div
+                                        class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback">
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-md-6 fv-plugins-icon-container">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input class="form-control " type="text" name="lastName" id="lastName"
+                                        placeholder="Akter">
+                                    <div
+                                        class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback">
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input class="form-control" type="text" id="email" name="email"
+                                        placeholder="salma@gmail.com">
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label for="organization" class="form-label">Organization</label>
+                                    <input type="text" class="form-control" id="organization" name="organization"
+                                        placeholder="Organization">
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label" for="phoneNumber">Phone Number</label>
+                                    <div class="input-group input-group-merge">
+                                        <span class="input-group-text">BD (+880)</span>
+                                        <input type="text" id="phoneNumber" name="phoneNumber" class="form-control"
+                                            placeholder="01...........">
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address" name="address"
+                                        placeholder="Address">
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label for="" class="form-label ">Country</label>
+                                    <select class="form-select form-control " id="prepend-text-single-field"
+                                        data-placeholder="Choose one thing">
+                                        <option></option>
+                                        <option>Bangladesh</option>
+                                        <option>Solution</option>
+                                        <option>Conglomeration</option>
+                                        <option>Algoritm</option>
+                                        <option>Holistic</option>
+                                    </select>
+                                </div>
+
+
+
+                                <div class="mb-3 col-md-6">
+                                    <label for="zip code" class="form-label">Zip code</label>
+                                    <input type="text" class="form-control" id="organization" name="organization"
+                                        value="" placeholder="12345">
+                                </div>
+
+
+
+                                <div class="input-group mb-3 col-md-6">
+                                    <div class="input-group-text">Prepend</div>
+                                    <select class="form-select bg-light" data-placeholder="Choose anything"
+                                        id="prepend-text-multiple-field" multiple>
+                                        <option>Christmas Island</option>
+                                        <option>South Sudan</option>
+                                        <option>Jamaica</option>
+                                        <option>Kenya</option>
+                                        <option>French Guiana</option>
+                                        <option>Mayotta</option>
+                                        <option>Liechtenstein</option>
+                                        <option>Denmark</option>
+                                        <option>Eritrea</option>
+                                        <option>Gibraltar</option>
+                                        <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                                        <option>Haiti</option>
+                                        <option>Namibia</option>
+                                        <option>South Georgia and the South Sandwich Islands</option>
+                                        <option>Vietnam</option>
+                                        <option>Yemen</option>
+                                        <option>Philippines</option>
+                                        <option>Benin</option>
+                                        <option>Czech Republic</option>
+                                        <option>Russia</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3 col-md-12">
+                                    <label class="form-label" for="bs-validation-bio">Bio</label>
+                                    <textarea class="form-control" id="bs-validation-bio" name="bs-validation-bio"
+                                        rows="3" required=""></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="d-block form-label">Gender</label>
+                                    <div class="form-check mb-2">
+                                        <input type="radio" id="basic-default-radio-male" name="basic-default-radio"
+                                            class="form-check-input" required="" checked="">
+                                        <label class="form-check-label" for="basic-default-radio-male">Male</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="basic-default-radio-female" name="basic-default-radio"
+                                            class="form-check-input" required="">
+                                        <label class="form-check-label" for="basic-default-radio-female">Female</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mt-2 pb-2">
+                                    <button type="submit" class="btn btn-primary me-2 waves-effect waves-light">Save
+                                        changes</button>
+                                    <button type="reset" class="btn  btn-primary me-2 waves-effect waves-light "
+                                        style="background: #1e3e79;">Cancel</button>
+                                </div>
+                        </form>
+
+
+                    </div>
+                </div>
+
+                <!-- input from section start -->
+
+                <div class=" mb-4 m-3 box shadow-sm ">
+
+                    <div class="header box  pt-3 p-2">
+
+                        <h3>input from</h3>
+                    </div>
+                    <div class=" custom-card">
+
+                        <div class="card-body m-3">
+                            <div class="row gy-4">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                    <p class="mb-2 text-muted">Basic Input:</p><input type="text" class="form-control"
+                                        id="input">
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-label"
+                                        class="form-label">Form Input With Label</label> <input type="text"
+                                        class="form-control" id="input-label"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-placeholder"
+                                        class="form-label">Form Input With Placeholder</label> <input type="text"
+                                        class="form-control" id="input-placeholder" placeholder="Placeholder">
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-text"
+                                        class="form-label">Type Text</label> <input type="text" class="form-control"
+                                        id="input-text" placeholder="Text"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-number"
+                                        class="form-label">Type Number</label> <input type="number" class="form-control"
+                                        id="input-number" placeholder="Number"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-password"
+                                        class="form-label">Type Password</label> <input type="password"
+                                        class="form-control" id="input-password" placeholder="Password"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-email"
+                                        class="form-label">Type Email</label> <input type="email" class="form-control"
+                                        id="input-email" placeholder="Email@xyz.com"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-tel"
+                                        class="form-label">Type Tel</label> <input type="tel" class="form-control"
+                                        id="input-tel" placeholder="+1100-2031-1233"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-date"
+                                        class="form-label">Type Date</label> <input type="date" class="form-control"
+                                        id="input-date"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-week"
+                                        class="form-label">Type Week</label> <input type="week" class="form-control"
+                                        id="input-week"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-month"
+                                        class="form-label">Type Month</label> <input type="month" class="form-control"
+                                        id="input-month"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-time"
+                                        class="form-label">Type Time</label> <input type="time" class="form-control"
+                                        id="input-time"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-datetime-local"
+                                        class="form-label">Type datetime-local</label> <input type="datetime-local"
+                                        class="form-control" id="input-datetime-local"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-search"
+                                        class="form-label">Type Search</label> <input type="search" class="form-control"
+                                        id="input-search" placeholder="Search"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-submit"
+                                        class="form-label">Type Submit</label> <input type="submit" class="form-control"
+                                        id="input-submit" value="Submit"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-reset"
+                                        class="form-label">Type Reset</label> <input type="reset" class="form-control"
+                                        id="input-reset"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-button"
+                                        class="form-label">Type Button</label> <input type="button"
+                                        class="form-control btn btn-primary" id="input-button" value="Button">
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-xl-4"> <label class="form-label">Type Color</label> <input
+                                                class="form-control form-input-color" type="color" value="#136bd0">
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="form-check">
+                                                <p class="mb-3 px-0 text-muted">Type Checkbox</p><input
+                                                    class="form-check-input ms-2" type="checkbox" value="" checked="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <div class="form-check">
+                                                <p class="mb-3 px-0 text-muted">Type Radio</p><input
+                                                    class="form-check-input ms-2" type="radio" checked="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-file"
+                                        class="form-label">Type File</label> <input class="form-control" type="file"
+                                        id="input-file"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label class="form-label">Type
+                                        Url</label> <input class="form-control" type="url" name="website"
+                                        placeholder="http://example.com"> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-disabled"
+                                        class="form-label">Type Disabled</label> <input type="text" id="input-disabled"
+                                        class="form-control" placeholder="Disabled input" disabled=""> </div>
+
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="text-area"
+                                        class="form-label">Textarea</label> <textarea class="form-control"
+                                        id="text-area" rows="1"></textarea> </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> <label for="input-DataList"
+                                        class="form-label">Datalist example</label> <input class="form-control"
+                                        list="datalistOptions" id="input-DataList" placeholder="Type to search...">
+                                    <datalist id="datalistOptions">
+                                        <option value="San Francisco"> </option>
+                                        <option value="New York"> </option>
+                                        <option value="Seattle"> </option>
+                                        <option value="Los Angeles"> </option>
+                                        <option value="Chicago"> </option>
+                                    </datalist>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mt-2 pb-2">
+                                <button type="submit" class="btn btn-primary me-2 waves-effect waves-light">Save
+                                    changes</button>
+                                <button type="reset" class="btn  btn-primary me-2 waves-effect waves-light "
+                                    style="background: #1e3e79;">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- input from section ewnd -->
+            </main>
+
+            <!-- footer section start -->
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; 2023</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer section end -->
+        </div>
+
+
+    </div>
+
+
+
+    <script src="js/datatables-simple.js"></script>
+    <script>
+        $('#basic-usage').select2({
+            theme: "bootstrap-5",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            placeholder: $(this).data('placeholder'),
+        });
+    </script>
+    <script>$('#multiple-select-clear-field').select2({
+            theme: "bootstrap-5",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            placeholder: $(this).data('placeholder'),
+            closeOnSelect: false,
+            allowClear: true,
+        });</script>
+    <script>
+        $('#prepend-text-single-field').select2({
+            theme: "bootstrap-5",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            placeholder: $(this).data('placeholder'),
+        });
+
+        $('#prepend-text-multiple-field').select2({
+            theme: "bootstrap-5",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            placeholder: $(this).data('placeholder'),
+            closeOnSelect: false,
+        });
+    </script>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

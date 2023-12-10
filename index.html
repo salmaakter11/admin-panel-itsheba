@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/img1.svg">
+    <title>Dashboard - Admin panel </title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap5-min.css">
+    <script src="js/frontawesome.js"></script>
+    <!-- Front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="sp-nav-fixed">
+    <nav class="sp-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+
+        <a class="navbar-brand ps-3" href="index.html">Admin Panel</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
+                    aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
+                        class="fas fa-search"></i></button>
+            </div>
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
+                    <li><a class="dropdown-item" href="register.html"> Register</a></li>
+                    <li><a class="dropdown-item" href="login.html"> Login</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sp-sidenav accordion sp-sidenav-dark" id="sidenavAccordion">
+                <div class="sp-sidenav-menu">
+                    <div class="nav">
+                        <div class="sp-sidenav-menu-heading">Core</div>
+                        <a class="nav-link active" href="index.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+                        <!-- from section -->
+                        <div class="sp-sidenav-menu-heading">Interface</div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sp-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            From
+                            <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav">
+                                <a class="nav-link" href="From.html">General from</a>
+                                <a class="nav-link" href="Advance-from.html">Advance from</a>
+                            </nav>
+                        </div>
+
+                        <!-- page section -->
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sp-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Pages
+                            <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                                <a class="nav-link" href="login.html">Login</a>
+                                <a class="nav-link" href="register.html">Register</a>
+                                <a class="nav-link" href="logout.html">Logout</a>
+                                <a class="nav-link" href="forgotpass.html">Forgot Password</a>
+                            </nav>
+                        </div>
+
+                        <!-- page section end-->
+
+                        <!-- Item section start -->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseItem"
+                            aria-expanded="false" aria-controls="collapseItem">
+                            <div class="sp-nav-link-icon"><i class="fas  fa-sitemap"></i></div>
+                            Item
+                            <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse " id="collapseItem" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav accordion" id="sidenavAccordionItem">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#pagesCollapseItem" aria-expanded="false"
+                                    aria-controls="pagesCollapseItem">
+                                    Components
+                                    <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse " id="pagesCollapseItem" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionItem">
+                                    <nav class="sp-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="Item1.html">Item1</a>
+                                        <a class="nav-link" href="Item2.html">Item2</a>
+                                        <a class="nav-link" href="Employee.html">Employee</a>
+                                    </nav>
+                                </div>
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#itemCollapseError" aria-expanded="false"
+                                    aria-controls="itemCollapseError">
+                                    Error
+                                    <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="itemCollapseError" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionItem">
+                                    <nav class="sp-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="401error.html">401 Page</a>
+                                        <a class="nav-link" href="404error.html">404 Page</a>
+
+                                    </nav>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Item section end -->
+
+
+                        <!-- chart section  -->
+
+                        <div class="sp-sidenav-menu-heading">Addons</div>
+                        <a class="nav-link" href="charts.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Charts
+                        </a>
+
+                        <!-- table section -->
+                        <a class="nav-link" href="tables.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Tables
+                        </a>
+                    </div>
+                </div>
+                <div class="sp-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    admin panel
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-5 pt-4 ">
+                    <div class="shadow-sm box ">
+                        <h1 class="mt-4 m-2 ">Dashboard</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active m-2 ">Dashboard overview and content summary</li>
+                        </ol>
+                    </div>
+                    <!-- card start -->
+                    <div class="row pt-3">
+                        <div class="col-xl-3 col-md-6   ">
+                            <div class=" card  text-white mb-4" style="background-color: rgb(219, 126, 199)">
+                                <div class="card-body">
+                                    <h3>Primary Card</h3>
+                                    <h3 class="p-1">120.60</h3>
+
+                                </div>
+
+                                <img src="https://yahyaconsultants.com/wp-content/uploads/2018/12/create-leads-icon-800x800.png"
+                                    class="img-fluid " alt="..." style="width: 18rem;">
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" style="margin-top: 17px;" href="#">
+                                        <h5>View Details</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-md-6 ">
+                            <div class="card  text-white mb-4 " style="background-color: rgb(129, 80, 197);">
+                                <div class="card-body">
+                                    <h3> Layouts</h3>
+                                    <h3 class="p-1">120.60</h3>
+                                </div>
+                                <img src="https://vectorified.com/images/lead-icon-1.png" class="img-fluid " alt="..."
+                                    style="width: 18rem;">
+
+                                <div class="card-footer d-flex align-items-center justify-content-between ">
+                                    <a class="small text-white stretched-link" style="margin-top: 17px;" href="#">
+                                        <h5>View details </h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6  ">
+                            <div class="card  text-white mb-4 " style="background-color: rgb(157, 118, 193); ">
+                                <div class="card-body">
+                                    <h3>Earnings </h3>
+                                    <h3 class="p-1">120.60</h3>
+                                </div>
+
+                                <img src="https://convertri.imgix.net/0bc0d9eb-94b4-11e8-9c08-0602f87a6cd8/d01ed5a1492e59d03f0b6f12228a8e1acee04cc6/Leads%20Icon.png?auto=compress"
+                                    class="img-fluid " alt="..." style="width: 18rem;">
+                                <div class="card-footer d-flex align-items-center justify-content-between ">
+                                    <a class="small text-white stretched-link" style="margin-top: 17px;" href="#">
+                                        <h5>View Details</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-md-6 ">
+                            <div class="card  text-white mb-4 " style="background-color: rgb(125, 197, 236);">
+                                <div class="card-body">
+                                    <h3>Documentat</h3>
+                                    <h3 class="p-1">$120.60</h5>
+                                </div>
+
+                                <img src="assets/img/img1.svg" class="img-fluid " alt="..." style="width: 18rem;">
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" style="margin-top: 17px;" href="#">
+                                        <h5>View Details</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card end -->
+
+                </div>
+
+
+
+                <!-- chart start -->
+                <div class="row p-5 pt-3">
+                    <div class="row  ">
+                        <div class="col-xl-6 shadow-sm box">
+                            <div class=" mb-4 ">
+                                <div class="header m-2 ">
+                                    <h3>Area Chart</h3>
+                                </div>
+                                <div class="card-body p-3 m-3 "><canvas id="myAreaChart" width="100%"
+                                        height="70"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 shadow-sm box">
+                            <div class=" mb-4 ">
+                                <div class="header m-2 ">
+                                    <h3>Bar Chart</h3>
+                                </div>
+                                <div class="card-body p-3 m-3 "><canvas id="myBarChart" width="100%"
+                                        height="70"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- chart end -->
+
+
+                    <!-- data table start -->
+                    <div class="container-fluid px-2 ">
+                        <div class="box  mt-4 p-2">
+                            <h1 class="mt-3">Table</h1>
+                            <ol class="breadcrumb mb-4">
+                                <li class="breadcrumb-item active"> official DataTables documentation.</li>
+                            </ol>
+                        </div>
+
+                        <div class=" mb-4 mt-5 px-3  table-responsive box shadow-sm p-2 m-4">
+                            <div class="card-header m-2">
+    
+                                <h3 >DataTable</h3>
+                            </div>
+                            <div >
+                                <table id="example" class="table table-striped" style="width:100% ; font-family: sans-serif;">
+                                    <thead>
+                                        <tr class="bg-dark">
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr >
+                                            <td style="text-align: center;">test</td>
+                                            <td style="text-align: center;">System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td style="text-align: center;">61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td style="text-align: center;">Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td style="text-align: center;">Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td style="text-align: center;">Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>2011/06/27</td>
+                                            <td>$183,000</td>
+                                            <td style="text-align: center;">Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td style="text-align: center;">Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td style="text-align: center;">Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+           
+
+
+
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; 2023</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/datatable-min-jquery.js"></script>
+    <script src="js/bootstrap5.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="assets/Chart/chart.js"></script>
+    <script src="assets/Chart/chart-area.js"></script>
+    <script src="assets/Chart/chart-bar.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script src="js/datatables-simple.js"></script>
+
+</body>
+
+
+</html>

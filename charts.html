@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/img1.svg">
+    <title>Dashboard - Admin panel </title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/frontawesome.js"></script>
+
+    <!-- Front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body class="sp-nav-fixed">
+    <nav class="sp-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">Admin Panel</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
+                    aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
+                        class="fas fa-search"></i></button>
+            </div>
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
+                    <li><a class="dropdown-item" href="register.html"> Register</a></li>
+                    <li><a class="dropdown-item" href="login.html"> Login</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sp-sidenav accordion sp-sidenav-dark" id="sidenavAccordion">
+                <div class="sp-sidenav-menu">
+                    <div class="nav">
+                        <div class="sp-sidenav-menu-heading">Core</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+                        <!-- from section -->
+                        <div class="sp-sidenav-menu-heading">Interface</div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sp-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            From
+                            <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav">
+                                <a class="nav-link" href="From.html">General from</a>
+                                <a class="nav-link" href="Advance-from.html">Advance from</a>
+                            </nav>
+                        </div>
+
+
+                        <!-- page section -->
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sp-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Pages
+                            <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                                <a class="nav-link" href="login.html">Login</a>
+                                <a class="nav-link" href="register.html">Register</a>
+                                <a class="nav-link" href="logout.html">Logout</a>
+                                <a class="nav-link" href="forgotpass.html">Forgot Password</a>
+                            </nav>
+                        </div>
+
+                        <!-- page section end-->
+
+
+                        <!-- Item section start -->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseItem"
+                            aria-expanded="false" aria-controls="collapseItem">
+                            <div class="sp-nav-link-icon"><i class="fas  fa-sitemap"></i></div>
+                            Item
+                            <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse " id="collapseItem" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sp-sidenav-menu-nested nav accordion" id="sidenavAccordionItem">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#pagesCollapseItem" aria-expanded="false"
+                                    aria-controls="pagesCollapseItem">
+                                    Components
+                                    <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse " id="pagesCollapseItem" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionItem">
+                                    <nav class="sp-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="Item1.html">Item1</a>
+                                        <a class="nav-link" href="Item2.html">Item2</a>
+                                        <a class="nav-link" href="Employee.html">Employee</a>
+                                    </nav>
+                                </div>
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#itemCollapseError" aria-expanded="false"
+                                    aria-controls="itemCollapseError">
+                                    Error
+                                    <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="itemCollapseError" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionItem">
+                                    <nav class="sp-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="401error.html">401 Page</a>
+                                        <a class="nav-link" href="404error.html">404 Page</a>
+
+                                    </nav>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Item section end -->
+
+
+                        <!-- chart section  -->
+
+                        <div class="sp-sidenav-menu-heading">Addons</div>
+                        <a class="nav-link active" href="charts.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Charts
+                        </a>
+
+                        <!-- table section -->
+                        <a class="nav-link" href="tables.html">
+                            <div class="sp-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Tables
+                        </a>
+
+
+
+                    </div>
+                </div>
+                <div class="sp-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    admin panel
+                </div>
+            </nav>
+        </div>
+        <!-- chat strat -->
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4 shadow-sm">
+                    <div class="box mt-5 m-3 p-1">
+                        <h1 class="mt-2  ">Chart</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Chart overview and content summary</li>
+                        </ol>
+                    </div>
+
+
+                    <!-- line chart start -->
+                    <div class="row pt-4 m-2">
+                        <div class="col-xl-6 box shadow-sm">
+                            <div class=" mb-4 ">
+                                <div class="header p-2 ">
+                                    <h3>Line Chart</h3>
+                                </div>
+                                <div class="card-body mt-2 m-2"><canvas id="myLineChart" width="100%"
+                                        height="70"></canvas></div>
+                            </div>
+                        </div>
+<!-- line chart end -->
+
+
+<!-- pie chart start -->
+                        <div class="col-xl-6 box shadow-sm">
+                            <div class=" mb-4 ">
+                                <div class="header p-2">
+                                    <h3>Pie Chart</h3>
+                                </div>
+                                <div class="card-body mt-2"><canvas id="myPieChart" width="100%" height="70"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pie chart end -->
+
+                    <!-- function chart start -->
+                    <section class="box m-2 shadow-sm mt-4 ">
+                        <div class="col-xl-12 box">
+                            <div class=" mb-4 ">
+                                <div class="header p-2 ">
+                                    <h3>Function Chart</h3>
+                                </div>
+                                <div class="card-body m-2"><canvas id="myFunctionChart" width="300%"
+                                        height="100"></canvas></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- bar chart start -->
+
+                    <div class="row pt-4 m-2">
+                        <div class="col-xl-6 box shadow-sm">
+                            <div class=" mb-4 ">
+                                <div class="header p-2">
+                                    <h3>Bar Chart</h3>
+                                </div>
+                                <div class="card-body mt-2"><canvas id="myBarChart2" width="100%" height="70"></canvas>
+                                </div>
+                            </div>
+                        </div>
+<!-- line chart end -->
+
+
+<!-- pie chart start -->
+                        <div class="col-xl-6 box shadow-sm">
+                            <div class=" mb-4 ">
+                                <div class="header p-2">
+                                    <h3>Radial Chart</h3>
+                                </div>
+                                <div class="card-body mt-2"><canvas id="radialBarChart" width="100%" height="70"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    
+
+                    
+
+                </div>
+            </main>
+
+
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; 2023</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/Chart/chart.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="assets/Chart/chart-line.js"></script>
+    <script src="assets/Chart/chart-bar2.js"></script>
+    <script src="assets/Chart/chart-pie.js"></script>
+    <script src="assets/Chart/radial-chart.js"></script>
+    <script src="assets/Chart/chart-function.js"></script>
+    <script src="js/datatables-simple.js"></script>
+</body>
+
+</html>

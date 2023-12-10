@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/img1.svg">
+  <title>Advance From - Admin panel </title>
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="js/frontawesome.js"></script>
+  <!-- from -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+  <!-- Or for RTL support -->
+  <!-- Scripts -->
+  <script src="js/frontawesome.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <!-- Front -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="sp-nav-fixed">
+  <nav class="sp-topnav navbar navbar-expand navbar-dark bg-dark">
+    <!-- Navbar Brand-->
+    <a class="navbar-brand ps-3" href="index.html"> Admin panel</a>
+    <!-- Sidebar Toggle-->
+    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+        class="fas fa-bars"></i></button>
+    <!-- Navbar Search-->
+    <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
+          aria-describedby="btnNavbarSearch" />
+        <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+      </div>
+    </form>
+    <!-- Navbar-->
+
+    <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false"><svg class="svg-inline--fa fa-user fa-fw" aria-hidden="true" focusable="false"
+            data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+            data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+            </path>
+          </svg><!-- <i class="fas fa-user fa-fw"></i> Font Awesome fontawesome.com --></a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
+          <li><a class="dropdown-item" href="register.html"> Register</a></li>
+          <li><a class="dropdown-item" href="login.html"> Login</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+      <nav class="sp-sidenav accordion sp-sidenav-dark" id="sidenavAccordion">
+        <div class="sp-sidenav-menu">
+          <div class="nav">
+            <div class="sp-sidenav-menu-heading">Core</div>
+            <a class="nav-link" href="index.html">
+              <div class="sp-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+              Dashboard
+            </a>
+
+
+            <div class="sp-sidenav-menu-heading">Interface</div>
+            <a class="nav-link active collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
+              aria-expanded="false" aria-controls="collapseLayouts">
+              <div class="sp-nav-link-icon "><i class="fas fa-columns"></i></div>
+              From
+              <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse show" id="collapseLayouts" aria-labelledby="headingOne"
+              data-bs-parent="#sidenavAccordion">
+              <nav class="sp-sidenav-menu-nested nav ">
+                <a class="nav-link  " href="From.html">General from</a>
+                <a class="nav-link active " href="Advance-from.html">Advance from</a>
+              </nav>
+            </div>
+
+
+            <!-- page section -->
+
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+              aria-expanded="false" aria-controls="collapsePages">
+              <div class="sp-nav-link-icon"><i class="fas fa-book-open"></i></div>
+              Pages
+              <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapsePages" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+              <nav class="sp-sidenav-menu-nested nav">
+                <a class="nav-link" href="profile.html">Profile</a>
+                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="register.html">Register</a>
+                <a class="nav-link" href="forgotpass.html">Forgot Password</a>
+              </nav>
+            </div>
+
+            <!-- page section end-->
+
+            <!-- Item section start -->
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseItem"
+              aria-expanded="false" aria-controls="collapseItem">
+              <div class="sp-nav-link-icon"><i class="fas  fa-sitemap"></i></div>
+              Item
+              <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+
+            <div class="collapse " id="collapseItem" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+              <nav class="sp-sidenav-menu-nested nav accordion" id="sidenavAccordionItem">
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseItem"
+                  aria-expanded="false" aria-controls="pagesCollapseItem">
+                  Components
+                  <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse " id="pagesCollapseItem" aria-labelledby="headingOne"
+                  data-bs-parent="#sidenavAccordionItem">
+                  <nav class="sp-sidenav-menu-nested nav">
+                    <a class="nav-link" href="Item1.html">Item1</a>
+                    <a class="nav-link" href="Item2.html">Item2</a>
+                    <a class="nav-link" href="Employee.html">Employee</a>
+                  </nav>
+                </div>
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#itemCollapseError"
+                  aria-expanded="false" aria-controls="itemCollapseError">
+                  Error
+                  <div class="sp-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="itemCollapseError" aria-labelledby="headingOne"
+                  data-bs-parent="#sidenavAccordionItem">
+                  <nav class="sp-sidenav-menu-nested nav">
+                    <a class="nav-link" href="401error.html">401 Page</a>
+                    <a class="nav-link" href="404error.html">404 Page</a>
+
+                  </nav>
+
+
+
+                </div>
+
+              </nav>
+            </div>
+            <!-- Item section end -->
+
+
+            <div class="sp-sidenav-menu-heading">Addons</div>
+            <a class="nav-link" href="charts.html">
+              <div class="sp-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+              Charts
+            </a>
+
+
+            <a class="nav-link" href="tables.html">
+              <div class="sp-nav-link-icon"><i class="fas fa-table"></i></div>
+              Tables
+            </a>
+
+
+          </div>
+        </div>
+        <div class="sp-sidenav-footer">
+          <div class="small">Logged in as:</div>
+          Admin panel
+        </div>
+      </nav>
+    </div>
+
+
+    <div id="layoutSidenav_content">
+      <main>
+        <div class="container-fluid px-4 m-3 ">
+          <h1 class="mt-2 shadow-sm header p-2">Advance From</h1>
+
+
+
+          <div class="row  pt-5 m-4 ">
+
+<!-- validation from start-->
+            <div class="col-xl-6 box  shadow-sm">
+              <div class=" mb-4 ">
+                <div class="header m-2">
+                  <h3> Validation</h3>
+                </div>
+
+                <div class=" mb-4">
+
+                  <div class="card-bod m-3">
+                    <h6>Address</h6>
+                    <form>
+                      <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Name</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-fullname2" class="input-group-text"><i
+                                class="ti ti-user"></i></span>
+                            <input type="text" class="form-control" id="basic-icon-default-fullname" placeholder="salma"
+                              aria-label="John Doe" aria-describedby="basic-icon-default-fullname2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Company</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-company2" class="input-group-text"><i
+                                class="ti ti-building"></i></span>
+                            <input type="text" id="basic-icon-default-company" class="form-control"
+                              placeholder="ACME Inc." aria-label="ACME Inc."
+                              aria-describedby="basic-icon-default-company2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span class="input-group-text"><i class="ti ti-mail"></i></span>
+                            <input type="text" id="basic-icon-default-email" class="form-control"
+                              placeholder="salma@gmail.com" aria-label="john.doe"
+                              aria-describedby="basic-icon-default-email2">
+                            <span id="basic-icon-default-email2" class="input-group-text"></span>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone No</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i
+                                class="ti ti-phone"></i></span>
+                            <input type="text" id="basic-icon-default-phone" class="form-control phone-mask"
+                              placeholder="658 799 8941" aria-label="658 799 8941"
+                              aria-describedby="basic-icon-default-phone2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-message2" class="input-group-text"><i
+                                class="ti ti-message-dots"></i></span>
+                            <textarea id="basic-icon-default-message" class="form-control"
+                              placeholder="Hi, Do you have a moment to talk Joe?"
+                              aria-label="Hi, Do you have a moment to talk Joe?"
+                              aria-describedby="basic-icon-default-message2"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="p-5">
+                        <div class="col-sm-10">
+                          <button type="submit" class="btn btn-primary waves-effect waves-light">Submit </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+<!-- submit from start -->
+
+
+            <div class=" col-xl-6 shadow-sm box ">
+              <div class=" mb-4">
+                <div class="header m-2">
+                  <h3>Submit from</h3>
+                </div>
+                <form class="card-body m-2">
+                  <h6>Account Details</h6>
+                  <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="multicol-username">Username</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="multicol-username" class="form-control" placeholder="salma">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="multicol-email">Email</label>
+                    <div class="col-sm-9">
+                      <div class="input-group input-group-merge">
+                        <input type="text" id="multicol-email" class="form-control" placeholder="salma@gmail.com"
+                          aria-label="salma" aria-describedby="multicol-email2">
+                        <span class="input-group-text" id="multicol-email2"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row form-password-toggle">
+                    <label class="col-sm-3 col-form-label" for="multicol-password">Password</label>
+                    <div class="col-sm-9">
+                      <div class="input-group input-group-merge">
+                        <input type="password" id="multicol-password" class="form-control" placeholder="············"
+                          aria-describedby="multicol-password2">
+                        <span class="input-group-text cursor-pointer" id="multicol-password2"><i
+                            class="ti ti-eye-off"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4 mx-n4">
+                  <h6> Personal Info</h6>
+                  <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="multicol-full-name">Full Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="multicol-full-name" class="form-control" placeholder="salma Akter">
+                    </div>
+                  </div>
+
+
+                  <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="multicol-birthdate">Birth Date</label>
+                    <div class="col-sm-9">
+                      <input type="date" class="form-control" id="datePicker">
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <label class="col-sm-3 col-form-label" for="multicol-phone">Phone No</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="multicol-phone" class="form-control phone-mask" placeholder="658 799 8941"
+                        aria-label="658 799 8941">
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <div>
+                      <div class="col-sm-9">
+                        <button type="submit"
+                          class="btn btn-primary me-sm-2 me-1 waves-effect waves-light">Submit</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 2nd section from datepicker from-->
+
+
+          <div class="row  shadow-sm  box mt-5 m-3">
+
+            <div class=" col-xl-6 shadow-sm box ">
+              <div class=" mb-4">
+                <div class="header m-2">
+                  <h3>DatePicker From</h3>
+                </div>
+                <form class="card-body m-3">
+                  <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="multicol-username">name</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="multicol-username" class="form-control" placeholder="salma">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="multicol-username">Phone Number</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="multicol-username" class="form-control" placeholder="+8801..............">
+                    </div>
+                  </div>
+                  <div class="row form-password-toggle">
+                    <label class="col-sm-3 col-form-label" for="multicol-password">Password</label>
+                    <div class="col-sm-9">
+                      <div class="input-group input-group-merge">
+                        <input type="password" id="multicol-password" class="form-control" placeholder="············"
+                          aria-describedby="multicol-password2">
+                        <span class="input-group-text cursor-pointer" id="multicol-password2"><i
+                            class="ti ti-eye-off"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="multicol-username">Email</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="multicol-username" class="form-control" placeholder="salma@gmail.com">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="multicol-username">Address</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="multicol-username" class="form-control" placeholder="address">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row mb-3">
+                    <label for="datePicker" class="col-sm-3 col-form-label">Select a date:</label>
+                    <div class="col-sm-9">
+                      <input type="date" class="form-control" id="datePicker">
+                    </div>
+                  </div>
+
+
+                  <div class="pt-4">
+                    <div>
+                      <div class="col-sm-9">
+                        <button type="submit"
+                          class="btn btn-primary me-sm-2 me-1 waves-effect waves-light">Submit</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+<!-- dalivery from start -->
+
+
+            <div class="col-xl-6 shadow-sm">
+              <div class=" mb-4">
+                <div class="header m-2">
+                  <h3> Delivery From</h3>
+                </div>
+
+                <div class="accordion-item m-2">
+                  <h2 class="accordion-header" id="headingDeliveryAddress">
+                  </h2>
+                  <div id="collapseDeliveryAddress" class="accordion-collapse collapse show"
+                    data-bs-parent="#collapsibleSection">
+                    <div class="accordion-body">
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-fullname">Full Name</label>
+                          <input type="text" id="collapsible-fullname" class="form-control" placeholder="mukta">
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-phone">Phone No</label>
+                          <input type="text" id="collapsible-phone" class="form-control phone-mask"
+                            placeholder="658 799 8941" aria-label="658 799 8941">
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label" for="collapsible-address">Address</label>
+                          <textarea name="collapsible-address" class="form-control" id="collapsible-address" rows="2"
+                            placeholder="1456, Mall Road"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-pincode">Pincode</label>
+                          <input type="text" id="collapsible-pincode" class="form-control" placeholder="658468">
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-landmark">Landmark</label>
+                          <input type="text" id="collapsible-landmark" class="form-control" placeholder="........">
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-city">City</label>
+                          <input type="text" id="collapsible-city" class="form-control" placeholder="Jackson">
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-landmark">Country</label>
+                          <input type="text" id="collapsible-landmark" class="form-control" placeholder="country">
+                        </div>
+
+                        <label class="form-check-label">Address Type</label>
+                        <div class="col mt-2">
+                          <div class="form-check form-check-inline">
+                            <input name="collapsible-address-type" class="form-check-input" type="radio" value=""
+                              id="collapsible-address-type-home" checked="">
+                            <label class="form-check-label" for="collapsible-address-type-home">Home (All day
+                              delivery)</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input name="collapsible-address-type" class="form-check-input" type="radio" value=""
+                              id="collapsible-address-type-office">
+                            <label class="form-check-label" for="collapsible-address-type-office"> Office (Delivery
+                              between 10 AM - 5 PM) </label>
+                          </div>
+                          <div class="pt-1">
+                            <div>
+                              <div class="col-sm-9">
+                                <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+
+
+      <footer class="py-4 bg-light mt-auto mt-3 box">
+        <div class="container-fluid px-4">
+          <div class="d-flex align-items-center justify-content-between small">
+            <div class="text-muted">Copyright &copy; 2023</div>
+            <div>
+              <a href="#">Privacy Policy</a>
+              &middot;
+              <a href="#">Terms &amp; Conditions</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script>
+  $('#prepend-text-single-field').select2({
+      theme: "bootstrap-5",
+      width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+      placeholder: $(this).data('placeholder'),
+    });
+
+    $('#prepend-text-multiple-field').select2({
+      theme: "bootstrap-5",
+      width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+      placeholder: $(this).data('placeholder'),
+      closeOnSelect: false,
+    });
+    </script>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/datatables-simple.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
