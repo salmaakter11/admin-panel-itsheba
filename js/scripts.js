@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', event => {
        
         sidebarToggle.addEventListener('click', event => {
             event.preventDefault();
-            document.body.classList.toggle('sp-sidenav-toggled');
-            localStorage.setItem('sp|sidebar-toggle', document.body.classList.contains('sp-sidenav-toggled'));
+            document.body.classList.toggle('sidenav-toggled');
+            localStorage.setItem('sidebar-toggle', document.body.classList.contains('sidenav-toggled'));
 
 
         });
